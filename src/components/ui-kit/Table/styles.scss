@@ -1,0 +1,39 @@
+.table_item {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #dddcdc;
+  border-radius: 0px 0px 10px 10px;
+ 
+
+  .table_column {
+    width: 100%;
+
+    .table_column_title {
+      background: rgb(160, 224, 160);
+      border-bottom: 1px solid #dddcdc;
+    }
+
+
+    .table_text {
+      padding: 10px 10px;
+      border-bottom: 1px solid #dddcdc;
+    }:hover{
+      background-color: rgb(160, 224, 160);
+    }
+  }
+
+  .item_info {
+    display: flex;
+
+    .table_item_text {
+      margin-right: 10px;
+    }
+  }
+
+  p{
+    color: black;
+  }
+}
+
+
+

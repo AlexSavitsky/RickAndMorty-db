@@ -1,0 +1,57 @@
+.single-item__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  margin: 50px 0 70px 0;
+  flex: 1 1 auto;
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    .episodeImg {
+      width: 200px;
+    }
+    .locationImg {
+      width: 400px;
+    }
+    ul {
+      list-style-type: none;
+
+      li {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 0;
+      }
+
+      button {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border: 0.5px solid black;
+        padding: 15px 20px;
+        background-color: rgb(255, 255, 216);
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(253, 253, 172);
+      }
+      .active:hover{
+        background-color: rgb(255, 255, 216);
+        cursor: default;
+      }
+    }
+  }
+}

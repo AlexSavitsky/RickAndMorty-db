@@ -1,0 +1,47 @@
+.list_item {
+  text-decoration: none;
+  display: flex;
+  padding: 20px 0px;
+
+  .item_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    color: black;
+
+    img {
+      height: 25px;
+      width: 25px;
+      margin-top: 20px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+
+    .item_image {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .item_info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px 30px;
+
+      
+    }
+  }
+
+  .item_container:hover {
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    transition: ease-out 0.3s;
+  }
+}

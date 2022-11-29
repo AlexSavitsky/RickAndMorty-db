@@ -1,0 +1,33 @@
+.menu_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+    transition: ease-out 0.3s;
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 20px;
+        align-items: center;
+        width: 50%;
+
+        button{
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 15px 35px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: rgb(40, 40, 40);
+            background-color: rgb(160, 224, 160);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(89, 174, 89);
+            transition: ease-out 0.3s;
+        }
+    }
+}
+
+
