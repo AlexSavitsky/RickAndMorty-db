@@ -24,7 +24,7 @@ const Table = (props) => {
               {posts?.map((post, key) => {
                 return (
                   <Link
-                    to={`/${type}/${post.id}`}
+                    to={`/RickAndMorty-db/${type}/${post.id}`}
                     style={{ textDecoration: "none" }}
                   >
                     <Typography key={key} className={"table_text"}>

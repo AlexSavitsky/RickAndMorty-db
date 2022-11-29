@@ -6,16 +6,16 @@ const Menu = () => {
   return (
     <div className="menu_wrapper">
       <div className="menu">
-        <Link to="/characters" style={{ textDecoration: "none" }}>
+        <Link to="/RickAndMorty-db/characters" style={{ textDecoration: "none" }}>
           <button>Characters</button>
         </Link>
-        <Link to="/episodes" style={{ textDecoration: "none" }}>
+        <Link to="/RickAndMorty-db/episodes" style={{ textDecoration: "none" }}>
           <button>Episodes</button>
         </Link>
-        <Link to="/locations" style={{ textDecoration: "none" }}>
+        <Link to="/RickAndMorty-db/locations" style={{ textDecoration: "none" }}>
           <button>Locations</button>
         </Link>
-        <Link to="/favorites" style={{ textDecoration: "none" }}>
+        <Link to="/RickAndMorty-db/favorites" style={{ textDecoration: "none" }}>
           <button>Favorites</button>
         </Link>
       </div>

@@ -16,7 +16,7 @@ const List = (props) => {
         return (
           <Grid className="list_item" item xs={4} key={post.name + key}>
             <Link
-              to={`./character/${post.id}`}
+              to={`/RickAndMorty-db/character/${post.id}`}
               style={{ textDecoration: "none" }}
             >
               <div className="item_container">

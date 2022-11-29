@@ -26,7 +26,7 @@ const Favorites = (props) => {
             return (
               <li key={item.name + key}>
                 <Link
-                  to={`/${item.type}/${item.id}`}
+                  to={`/RickAndMorty-db/${item.type}/${item.id}`}
                   style={{ textDecoration: "none" }}
                 >
                   <Typography>{`${item.name} - ${item.type}`}</Typography>
