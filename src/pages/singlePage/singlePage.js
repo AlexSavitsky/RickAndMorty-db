@@ -12,10 +12,12 @@ import locationImg from "../../recources/img/locationImg.webp";
 import "./style.scss";
 
 const SinglePage = () => {
-  const path = window.location.pathname;
+  const path = window.location.pathname.split("/RickAndMorty-db")[1];
   const [post, setPost] = useState({});
   const [list, setList] = useState(getFromStorage("list") || []);
   const type = path.split("/")[1];
+
+  console.log(path)
   useEffect(() => {
     const fetching = async () => {
       const post = await fetch(`https://rickandmortyapi.com/api${path}`);
