@@ -1,31 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import {
   getFromStorage,
   putInStorage,
   updateStorage,
 } from "../../utils/localstorage";
-
+import {useParams} from "react-router-dom";
 import Footer from "../../components/Footer"
 import Menu from "../../components/Menu";
 import episodeImg from "../../recources/img/episode.jpg";
 import locationImg from "../../recources/img/locationImg.webp";
 import "./style.scss";
 
-const SinglePage = () => {
-  const path = window.location.pathname.split("/RickAndMorty-db")[1];
+const SinglePage = (props) => {
+  const {type} = props;
   const [post, setPost] = useState({});
   const [list, setList] = useState(getFromStorage("list") || []);
-  const type = path.split("/")[1];
-
-  console.log(path)
+  const id = useParams().id;
+  
   useEffect(() => {
     const fetching = async () => {
-      const post = await fetch(`https://rickandmortyapi.com/api${path}`);
+      const post = await fetch(`https://rickandmortyapi.com/api/${type}/${id}`);
 
       setPost(await post.json());
     };
     fetching();
-  }, [path]);
+  }, [type, id]);
 
   useEffect(() => {
     updateStorage("list", list);

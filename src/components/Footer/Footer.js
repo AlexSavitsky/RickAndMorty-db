@@ -16,17 +16,17 @@ const Footer = () => {
           </div>
           <ul class="social-links">
             <li>
-              <a target="_blank" href="https://github.com/AlexSavitsky">
+              <a target="blank" rel="noreferrer" href="https://github.com/AlexSavitsky">
                 <img src={github} alt="github" />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://.me/Sava_Savitsky">
+              <a target="blank" rel="noreferrer" href="https://t.me/Sava_Savitsky">
                 <img src={telegram} alt="telegram" />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.linkedin.com/in/alexandr-savitsky/">
+              <a target="blank" rel="noreferrer" href="https://www.linkedin.com/in/alexandr-savitsky/">
                 <img src={linkedIn} alt="linkedIn" />
               </a>
             </li>
